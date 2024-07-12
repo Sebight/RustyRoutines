@@ -2,6 +2,7 @@ use std::env;
 
 mod command;
 mod routines;
+mod loader;
 
 pub struct AppState {
     pub routines: Vec<String>,

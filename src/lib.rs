@@ -16,7 +16,7 @@ macro_rules! rr_logi {
     ($msg:expr) => {
         // if LOG_LEVEL <= 1 {
         // }
-        println!("\x1b[32m[INFO] {}\x1b[0m", $msg);  // Green text
+        println!("\x1b[32m[INFO] {}\x1b[0m", $msg);
     };
 }
 
@@ -25,7 +25,7 @@ macro_rules! rr_logw {
     ($msg:expr) => {
         // if LOG_LEVEL <= 2 {
         // }
-        println!("\x1b[33m[WARNING] {}\x1b[0m", $msg);  // Yellow text
+        println!("\x1b[33m[WARNING] {}\x1b[0m", $msg);
     };
 }
 
@@ -34,6 +34,6 @@ macro_rules! rr_loge {
     ($msg:expr) => {
         // if LOG_LEVEL <= 3 {
         // }
-        println!("\x1b[31m[ERROR] {}\x1b[0m", $msg);  // Red text
+        println!("\x1b[31m[ERROR] {}\x1b[0m", $msg);
     };
 }
